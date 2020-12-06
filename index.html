@@ -1068,7 +1068,17 @@ footer .footer-widgets ul.widgets li.widget h2.widgettitle {
   }
 }
 
+.podcast-img {
+  width: 400px;  
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 800px) {
+  .podcast-img {
+    width: 100%;
+    padding: 1em;  
+  }
+  
   .card-box { 
     flex-direction: column;
     justify-content: center;
@@ -1078,6 +1088,13 @@ footer .footer-widgets ul.widgets li.widget h2.widgettitle {
     width: 100%;
     height: 200px;
     object-fit: cover;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .podcast-img {
+    width: 100%;
+    padding: 1em;  
   }
 }
 
@@ -1245,7 +1262,7 @@ footer .footer-widgets ul.widgets li.widget h2.widgettitle {
 
             <a href="https://soundcloud.com/user-571120910" style="margin-left: auto; margin-right: auto;">
                 <div style="z-index: 1; margin-top: 2em; width: 100%; height: 60%; margin-left: auto; margin-right: auto;">
-                  <img style="width: 400px;  object-fit: contain;" src="./podcast.png"></img>
+                  <img class="podcast-img" src="./podcast.png"></img>
                 </div>
             </a>
 
